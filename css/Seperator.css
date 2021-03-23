@@ -1,0 +1,755 @@
+﻿/* Reset */
+
+label, #navigation, .error, .success, input[type="submit"], input[type="reset"] {
+    font-weight: bold;
+}
+
+    .curved, #navigation a, #navigation span, .error, .success, .box, .utils a {
+        -moz-border-radius-bottomleft: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+    }
+
+/* Error and Success messages */
+.error, .success {
+    padding: 4px 8px;
+}
+
+.error, .success {
+    padding: 4px 8px;
+}
+
+    .error, .success, .info, .error a, .success a, .info a {
+        color: #fff
+    }
+
+.error {
+    background: #901830
+}
+
+
+blockquote, q {
+    quotes: none
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none
+    }
+
+
+hr {
+    border: 0 #ccc solid;
+    border-top-width: 1px;
+    clear: both;
+    height: 0
+}
+
+/* Fixes width issues with form elements in the grid. */
+.grid_1 select, .grid_1 input, .grid_1 textarea {
+    width: 30px
+}
+
+.grid_1 select {
+    width: 40px
+}
+
+.grid_2 select, .grid_2 input, .grid_2 textarea {
+    width: 90px
+}
+
+.grid_2 select {
+    width: 100px
+}
+
+.grid_3 select, .grid_3 input, .grid_3 textarea {
+    width: 150px
+}
+
+.grid_3 select {
+    width: 160px
+}
+
+.grid_4 select, .grid_4 input, .grid_4 textarea {
+    width: 210px
+}
+
+.grid_4 select {
+    width: 220px
+}
+
+.grid_5 select, .grid_5 input, .grid_5 textarea {
+    width: 270px
+}
+
+.grid_5 select {
+    width: 280px
+}
+
+.grid_6 select, .grid_6 input, .grid_6 textarea {
+    width: 330px
+}
+
+.grid_6 select {
+    width: 340px
+}
+
+.grid_7 select, .grid_7 input, .grid_7 textarea {
+    width: 390px
+}
+
+.grid_7 select {
+    width: 400px
+}
+
+.grid_8 select, .grid_8 input, .grid_8 textarea {
+    width: 450px
+}
+
+.grid_8 select {
+    width: 460px
+}
+
+.grid_9 select, .grid_9 input, .grid_9 textarea {
+    width: 510px
+}
+
+.grid_9 select {
+    width: 520px
+}
+
+.grid_10 select, .grid_10 input, .grid_10 textarea {
+    width: 570px
+}
+
+.grid_10 select {
+    width: 580px
+}
+
+.grid_11 select, .grid_11 input, .grid_11 textarea {
+    width: 630px
+}
+
+.grid_11 select {
+    width: 640px
+}
+
+.grid_12 select, .grid_12 input, .grid_12 textarea {
+    width: 690px
+}
+
+.grid_12 select {
+    width: 700px
+}
+
+.grid_13 select, .grid_13 input, .grid_13 textarea {
+    width: 750px
+}
+
+.grid_13 select {
+    width: 760px
+}
+
+.grid_14 select, .grid_14 input, .grid_14 textarea {
+    width: 810px
+}
+
+.grid_14 select {
+    width: 820px
+}
+
+.grid_15 select, .grid_15 input, .grid_15 textarea {
+    width: 870px
+}
+
+.grid_15 select {
+    width: 880px
+}
+
+.grid_16 select, .grid_16 input, .grid_16 textarea {
+    width: 930px
+}
+
+.grid_16 select {
+    width: 940px
+}
+
+/* Make sure form elements don't break the box width */
+.grid_1 > .box select, .grid_1 > .box input, .grid_1 > .box textarea {
+    width: 8px;
+}
+
+.grid_2 > .box select, .grid_2 > .box input, .grid_2 > .box textarea {
+    width: 68px;
+}
+
+.grid_3 > .box select, .grid_3 > .box input, .grid_3 > .box textarea {
+    width: 128px;
+}
+
+.grid_4 > .box select, .grid_4 > .box input, .grid_4 > .box textarea {
+    width: 188px;
+}
+
+.grid_5 > .box select, .grid_5 > .box input, .grid_5 > .box textarea {
+    width: 248px;
+}
+
+.grid_6 > .box select, .grid_6 > .box input, .grid_6 > .box textarea {
+    width: 310px;
+}
+
+.grid_7 > .box select, .grid_7 > .box input, .grid_7 > .box textarea {
+    width: 368px;
+}
+
+.grid_8 > .box select, .grid_8 > .box input, .grid_8 > .box textarea {
+    width: 428px;
+}
+
+.grid_9 > .box select, .grid_9 > .box input, .grid_9 > .box textarea {
+    width: 488px;
+}
+
+.grid_10 > .box select, .grid_10 > .box input, .grid_10 > .box textarea {
+    width: 548px;
+}
+
+.grid_11 > .box select, .grid_11 > .box input, .grid_11 > .box textarea {
+    width: 608px;
+}
+
+.grid_12 > .box select, .grid_12 > .box input, .grid_12 > .box textarea {
+    width: 668px;
+}
+
+.grid_13 > .box select, .grid_13 > .box input, .grid_13 > .box textarea {
+    width: 728px;
+}
+
+.grid_14 > .box select, .grid_14 > .box input, .grid_14 > .box textarea {
+    width: 788px;
+}
+
+.grid_15 > .box select, .grid_15 > .box input, .grid_15 > .box textarea {
+    width: 848px;
+}
+
+.grid_16 > .box select, .grid_16 > .box input, .grid_16 > .box textarea {
+    width: 908px;
+}
+
+/*
+	960 Grid System ~ Core CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* `Containers
+----------------------------------------------------------------------------------------------------*/
+
+.container_16 {
+    /*margin-left: auto;
+    margin-right: auto;
+    width: 960px;*/
+}
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16 {
+    display: inline;
+    /*float: left;*/
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+    margin-left: 0;
+}
+
+.omega {
+    margin-right: 0;
+}
+
+/* `Grid >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_16 .grid_1,
+.container_16 .grid_1 .box,
+.container_16 .grid_1 .ui-state-highlight {
+    width: 40px !important
+}
+
+.container_16 .grid_2,
+.container_16 .grid_2 .box,
+.container_16 .grid_2 .ui-state-highlight {
+    width: 100px !important
+}
+
+.container_16 .grid_3,
+.container_16 .grid_3 .box,
+.container_16 .grid_3 .ui-state-highlight {
+    width: 160px !important
+}
+
+.container_16 .grid_4,
+.container_16 .grid_4 .box,
+.container_16 .grid_4 .ui-state-highlight {
+    width: 220px !important
+}
+
+.container_16 .grid_5,
+.container_16 .grid_5 .box,
+.container_16 .grid_5 .ui-state-highlight {
+    width: 280px !important
+}
+
+.container_16 .grid_6,
+.container_16 .grid_6 .box,
+.container_16 .grid_6 .ui-state-highlight {
+    width: 340px !important
+}
+
+.container_16 .grid_7,
+.container_16 .grid_7 .box,
+.container_16 .grid_7 .ui-state-highlight {
+    width: 400px !important
+}
+
+.container_16 .grid_8,
+.container_16 .grid_8 .box,
+.container_16 .grid_8 .ui-state-highlight {
+    width: 460px !important
+}
+
+.container_16 .grid_9,
+.container_16 .grid_9 .box,
+.container_16 .grid_9 .ui-state-highlight {
+    width: 520px !important
+}
+
+.container_16 .grid_10,
+.container_16 .grid_10 .box,
+.container_16 .grid_10 .ui-state-highlight {
+    width: 580px !important
+}
+
+.container_16 .grid_11,
+.container_16 .grid_11 .box,
+.container_16 .grid_11 .ui-state-highlight {
+    width: 640px !important
+}
+
+.container_16 .grid_12,
+.container_16 .grid_12 .box,
+.container_16 .grid_12 .ui-state-highlight {
+    width: 700px !important
+}
+
+.container_16 .grid_13,
+.container_16 .grid_13 .box,
+.container_16 .grid_13 .ui-state-highlight {
+    width: 760px !important
+}
+
+.container_16 .grid_14,
+.container_16 .grid_14 .box,
+.container_16 .grid_14 .ui-state-highlight {
+    width: 820px !important
+}
+
+.container_16 .grid_15,
+.container_16 .grid_15 .box,
+.container_16 .grid_15 .ui-state-highlight {
+    width: 880px !important
+}
+
+.container_16 .grid_16,
+.container_16 .grid_16 .box,
+.container_16 .grid_16 .ui-state-highlight {
+    width: 940px !important
+}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+--------------------------------------------------------------------------------*/ .container_12,
+.container_16 {
+    width: 92%;
+    /*margin-left: 4%;
+    margin-right: 4%;*/
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16 {
+    display: inline;
+    /*float: left;
+    margin-left: 1%;
+    margin-right: 1%;*/
+}
+
+.container_12 .grid_3,
+.container_16 .grid_4 {
+    width: 23%;
+}
+
+.container_12 .grid_6,
+.container_16 .grid_8 {
+    width: 48%;
+}
+
+.container_12 .grid_9,
+.container_16 .grid_12 {
+    width: 73%;
+}
+
+.container_12 .grid_12,
+.container_16 .grid_16 {
+    width: 98%;
+}
+
+/* =Grid >> Children (Alpha ~ First, Omega ~ Last)
+--------------------------------------------------------------------------------*/
+
+.alpha {
+    margin-left: 0;
+}
+
+.omega {
+    margin-right: 0;
+}
+
+/* =Grid >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .grid_1 {
+    width: 6.333%;
+}
+
+.container_12 .grid_2 {
+    width: 14.666%;
+}
+
+.container_12 .grid_4 {
+    width: 31.333%;
+}
+
+.container_12 .grid_5 {
+    width: 39.666%;
+}
+
+.container_12 .grid_7 {
+    width: 56.333%;
+}
+
+.container_12 .grid_8 {
+    width: 64.666%;
+}
+
+.container_12 .grid_10 {
+    width: 81.333%;
+}
+
+.container_12 .grid_11 {
+    width: 89.666%;
+}
+
+/* =Grid >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .grid_1 {
+    width: 4.25%;
+}
+
+.container_16 .grid_2 {
+    width: 10.5%;
+}
+
+.container_16 .grid_3 {
+    width: 16.75%;
+}
+
+.container_16 .grid_5 {
+    width: 29.25%;
+}
+
+.container_16 .grid_6 {
+    width: 35.5%;
+}
+
+.container_16 .grid_7 {
+    width: 41.75%;
+}
+
+.container_16 .grid_9 {
+    width: 54.25%;
+}
+
+.container_16 .grid_10 {
+    width: 60.5%;
+}
+
+.container_16 .grid_11 {
+    width: 66.75%;
+}
+
+.container_16 .grid_13 {
+    width: 79.25%;
+}
+
+.container_16 .grid_14 {
+    width: 85.5%;
+}
+
+.container_16 .grid_15 {
+    width: 91.75%;
+}
+
+/* =Prefix Extra Space >> Global
+--------------------------------------------------------------------------------*/
+
+.container_12 .prefix_3,
+.container_16 .prefix_4 {
+    padding-left: 25%;
+}
+
+.container_12 .prefix_6,
+.container_16 .prefix_8 {
+    padding-left: 50%;
+}
+
+.container_12 .prefix_9,
+.container_16 .prefix_12 {
+    padding-left: 75%;
+}
+
+/* =Prefix Extra Space >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .prefix_1 {
+    padding-left: 8.333%;
+}
+
+.container_12 .prefix_2 {
+    padding-left: 16.666%;
+}
+
+.container_12 .prefix_4 {
+    padding-left: 33.333%;
+}
+
+.container_12 .prefix_5 {
+    padding-left: 41.666%;
+}
+
+.container_12 .prefix_7 {
+    padding-left: 58.333%;
+}
+
+.container_12 .prefix_8 {
+    padding-left: 66.666%;
+}
+
+.container_12 .prefix_10 {
+    padding-left: 83.333%;
+}
+
+.container_12 .prefix_11 {
+    padding-left: 91.666%;
+}
+
+/* =Prefix Extra Space >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .prefix_1 {
+    padding-left: 6.25%;
+}
+
+.container_16 .prefix_2 {
+    padding-left: 12.5%;
+}
+
+.container_16 .prefix_3 {
+    padding-left: 18.75%;
+}
+
+.container_16 .prefix_5 {
+    padding-left: 31.25%;
+}
+
+.container_16 .prefix_6 {
+    padding-left: 37.5%;
+}
+
+.container_16 .prefix_7 {
+    padding-left: 43.75%;
+}
+
+.container_16 .prefix_9 {
+    padding-left: 56.25%;
+}
+
+.container_16 .prefix_10 {
+    padding-left: 62.5%;
+}
+
+.container_16 .prefix_11 {
+    padding-left: 68.75%;
+}
+
+.container_16 .prefix_13 {
+    padding-left: 81.25%;
+}
+
+.container_16 .prefix_14 {
+    padding-left: 87.5%;
+}
+
+.container_16 .prefix_15 {
+    padding-left: 93.75%;
+}
+
+/* =Suffix Extra Space >> Global
+--------------------------------------------------------------------------------*/
+
+.container_12 .suffix_3,
+.container_16 .suffix_4 {
+    padding-right: 25%;
+}
+
+.container_12 .suffix_6,
+.container_16 .suffix_8 {
+    padding-right: 50%;
+}
+
+.container_12 .suffix_9,
+.container_16 .suffix_12 {
+    padding-right: 75%;
+}
+
+/* =Suffix Extra Space >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .suffix_1 {
+    padding-right: 8.333%;
+}
+
+.container_12 .suffix_2 {
+    padding-right: 16.666%;
+}
+
+.container_12 .suffix_4 {
+    padding-right: 33.333%;
+}
+
+.container_12 .suffix_5 {
+    padding-right: 41.666%;
+}
+
+.container_12 .suffix_7 {
+    padding-right: 58.333%;
+}
+
+.container_12 .suffix_8 {
+    padding-right: 66.666%;
+}
+
+.container_12 .suffix_10 {
+    padding-right: 83.333%;
+}
+
+.container_12 .suffix_11 {
+    padding-right: 91.666%;
+}
+
+/* =Suffix Extra Space >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .suffix_1 {
+    padding-right: 6.25%;
+}
+
+.container_16 .suffix_2 {
+    padding-right: 16.5%;
+}
+
+.container_16 .suffix_3 {
+    padding-right: 18.75%;
+}
+
+.container_16 .suffix_5 {
+    padding-right: 31.25%;
+}
+
+.container_16 .suffix_6 {
+    padding-right: 37.5%;
+}
+
+.container_16 .suffix_7 {
+    padding-right: 43.75%;
+}
+
+.container_16 .suffix_9 {
+    padding-right: 56.25%;
+}
+
+.container_16 .suffix_10 {
+    padding-right: 62.5%;
+}
+
+.container_16 .suffix_11 {
+    padding-right: 68.75%;
+}
+
+.container_16 .suffix_13 {
+    padding-right: 81.25%;
+}
+
+.container_16 .suffix_14 {
+    padding-right: 87.5%;
+}
+
+.container_16 .suffix_15 {
+    padding-right: 93.75%;
+}

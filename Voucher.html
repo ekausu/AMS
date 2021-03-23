@@ -1,0 +1,310 @@
+﻿<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>-->
+	<style>
+	
+* { margin: 0; padding: 0; }
+
+body { font: 10px/1.4 Georgia, serif; }
+#page-wrap { width: 800px; margin: 0 auto; 
+             box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 26px auto 0;
+  padding: 24px;
+  
+}
+       
+        .NoBorder{
+           border-color:white;
+        }
+        .LgCol td {
+            height: 15px;
+            border-color:black;
+        }
+textarea { border: 0; font: 14px Georgia, Serif; overflow: hidden; resize: none; }
+table { border-collapse: collapse; }
+table td, table th { border: 1px solid black; padding: 5px; }
+
+#header { height: 15px; width: 100%; margin: 20px 0; background: #222; text-align: center; color: white; font: bold 15px Helvetica, Sans-Serif; text-decoration: uppercase; letter-spacing: 20px; padding: 8px 0px; }
+
+#address { width: 250px; height: 150px; float: left; }
+#customer { overflow: hidden; }
+
+#logo { text-align: right; float: right; position: relative; margin-top: 25px; border: 1px solid #fff; max-width: 540px; max-height: 100px; overflow: hidden; }
+#logo:hover, #logo.edit { border: 1px solid #000; margin-top: 0px; max-height: 125px; }
+#logoctr { display: none; }
+#logo:hover #logoctr, #logo.edit #logoctr { display: block; text-align: right; line-height: 25px; background: #eee; padding: 0 5px; }
+#logohelp { text-align: left; display: none; font-style: italic; padding: 10px 5px;}
+#logohelp input { margin-bottom: 5px; }
+.edit #logohelp { display: block; }
+.edit #save-logo, .edit #cancel-logo { display: inline; }
+.edit #image, #save-logo, #cancel-logo, .edit #change-logo, .edit #delete-logo { display: none; }
+#customer-title { font-size: 20px; font-weight: bold; float: left; }
+img.per {
+    height: 50%;
+    width: 80%;
+}
+#meta { margin-top: 1px; width: 300px; float: right; }
+#meta td { text-align: right;  }
+#meta td.meta-head { text-align: left; background: #eee; }
+#meta td textarea { width: 100%; height: 20px; text-align: right; }
+
+#items { clear: both; width: 100%; margin: 30px 0 0 0; border: 1px solid black; }
+#items th { background: #eee; }
+#items textarea { width: 80px; height: 50px; }
+#items tr.item-row td { border: 0; vertical-align: top; }
+#items td.description { width: 300px; }
+#items td.item-name { width: 175px; }
+#items td.description textarea, #items td.item-name textarea { width: 100%; }
+#items td.total-line { border-right: 0; text-align: right; }
+#items td.total-value { border-left: 0; padding: 10px; }
+#items td.total-value textarea { height: 20px; background: none; }
+#items td.balance { background: #eee; }
+#items td.blank { border: 0; }
+
+#terms { text-align: center; margin: 20px 0 0 0; }
+#terms h5 { text-transform: uppercase; font: 13px Helvetica, Sans-Serif; letter-spacing: 10px; border-bottom: 1px solid black; padding: 0 0 8px 0; margin: 0 0 8px 0; }
+#terms textarea { width: 100%; text-align: center;}
+
+textarea:hover, textarea:focus, #items td.total-value textarea:hover, #items td.total-value textarea:focus, .delete:hover { background-color:#EEFF88; }
+
+.delete-wpr { position: relative; }
+.delete { display: block; color: #000; text-decoration: none; position: absolute; background: #EEEEEE; font-weight: bold; padding: 0px 3px; border: 1px solid; top: -6px; left: -22px; font-family: Verdana; font-size: 12px; }
+	@page{
+        size:A4;
+	}
+    </style>
+<!--</head>
+<body>-->
+    <div id="page-wrap" style="width:90%">
+
+        <table style="width:100%;max-height:" class="NoBoreder">
+            <tr>
+                <td colspan="2" class="NoBorder">
+                    <table width="100%">
+                        <tr><td>Account Type</td><td>{Account Type}</td></tr>
+                        <tr><td>Department</td><td>{Department}</td></tr>
+                        <tr><td>Ministry</td><td>{Ministry}</td></tr>
+                       <tr><td>Station</td><td>{Station}</td></tr>
+                    </table>
+                </td>
+                <td colspan="2" class="NoBorder">
+				<table  width="100%" >
+		    	<tr ><td class="NoBorder" align="center"><h1>REPUBLIC OF ZAMBIA <BR>PAYMENT VOUCHER</h1></td></tr>
+				</table>
+				</td>
+               
+                <td class="NoBorder">
+                    <table width="100%"align="right">
+					<tr>
+                                        <td><img src="{CODE}" class="per" WIDTH="130" height="40" alt=""/></td>
+                                    </tr>
+				      <tr><td>Committment <br /> Ref No.</td></tr>
+                        <tr><td>Cheque No <br /> Date: {Date}</td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <!------------------------2 TABLE START------------------------>
+                <td colspan="5" class="NoBorder">
+                    <table width="100%">
+                        <tr>
+                            <td rowspan="2"></td>
+                            <td rowspan="2">Class & Function</td>
+                            <td>Organisation</td>
+                            <td>Geographical</td>
+                            <td></td>
+                            <td></td>
+                            <td>Charts Of Accounts</td>
+                            <td>Amount</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%">
+                                    <tr>
+                                        <td>Head</td>
+                                        <td>Dept</td>
+                                        <td>Unit</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>Warrant Holder <br /> Accounting Officer</td>
+                            <td>Programme</td>
+                            <td>Activity</td>
+                            <td>
+                                <table width="100%">
+                                    <tr>
+                                        <td>Account Code</td>
+                                        <td>Subsidiary</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>K...............N</td>
+                        </tr>
+                        <!------------------------------END OF HEADERS------------------------------>
+                        <tr>
+                            <td rowspan="8">
+                                <table width="100%" height="100%">
+                                    <tr style="height:100px">
+                                        <td>
+                                            Debit
+                                        </td>
+
+                                    </tr>
+                                    <tr style="height:100px">
+                                        <td>
+                                            Credit
+                                        </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                            <td rowspan="8">
+                                <table width="100%" class="LgCol">
+                                    {FUNCTION}
+                                </table>
+                                        <!-----------------END COL 2------------------>
+                            </td>
+
+                            <td rowspan="4">
+                                <table width="100%" class="LgCol">
+                                    {HEAD}
+                                </table>
+                                <!----------------------END COL3--------------------------------->
+                            </td>
+                            <td rowspan="4">
+								<table width="100%" class="LgCol">
+									{ACCOUNTING}
+								</table>
+                                <!---------------------END COL 4------------------------------->
+                            </td>
+                            <td rowspan="4">
+								<table width="100%" class="LgCol">
+									{PROGRAMME}
+								</table>
+                                <!------------------------END COL 6---------------------------->
+                            </td>
+                            <td rowspan="4">
+                                <table width="100%" class="LgCol">
+                                    {PROGRAMME}
+                                </table>
+                                <!------------------------END COL 7------------------------------------------------>
+                            </td>
+
+                            <td rowspan="4">
+                                <table width="100%" class="LgCol">
+									{SUBSIDIARY}
+                                </table>
+                                <!---------------END COL 8--------------------------------------->
+                            </td>
+                            <td rowspan="4">
+                                <table width="100%" class="LgCol">
+                                    {AMOUNT}
+                                </table>
+                            </td>
+                            
+                        </tr>
+                       
+                        <!--------------------BEGIN CREDIT----------------------->
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="NoBorder" colspan="8"  height="10px">Payee {PAYEE}....{EMPLOYEE NUMBER}....................................................................................................</td>
+            </tr>
+            <tr ><td class="NoBorder">Remittance to be sent to</td><td class="NoBorder" colspan="7"></td></tr>
+            <tr>
+                <td class="NoBorder" colspan="2">
+                    <table width="100%">
+                        <tr>
+                            <td>Name</td>
+                            <td>{NAME}</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>{ADDRESS}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="NoBorder" colspan="2" width="100%">
+
+                </td>
+                <td class="NoBorder" colspan="2">
+                    <table width="100%">
+                        <tr>
+                            <td>Authorities</td>
+                        </tr>
+                        <tr>
+                            <td>{AUTHORITIES}</td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="NoBorder" colspan="8">
+                    <table width="100%">
+                        <tr>
+                            <td class="NoBorder">
+                                <table width="100%">
+                                    <tr><td>Description</td></tr>
+                                    <tr style="height:50px"><td>{DESCRIPTION}</td></tr>
+                                </table>
+                                Copy:<br /> 1 Cahier <br />2 Payee
+                            </td>
+                           <td colspan="2" class="NoBorder" >
+                              
+                            </td>
+                            <td class="NoBorder" >
+                                <table width="100%" style="align:right">
+                                    <tr><td rowspan="3"></td><td colspan="2">Amount</td></tr>
+                                    <tr><td>K</td><td>N</td></tr>
+                                    <tr><td height="30px">{TOTAL}</td><td></td></tr>
+                                    <tr><td>TOTAL K</td><td>{TOTAL}</td><td>N</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="NoBorder" colspan="8">
+                                I certify that the above account is correct and was incurred under the authority quoted and the rate/price charged is/are
+                                <br /> according to regulations/ contract fair and reasonable and that the payment would not cause an excessover the
+                                amount allocated to me
+                                <br />
+                                <br />RECEIVED payment of the above sum.
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="NoBorder">.........................................SIGNATURE</td>
+                            <td class="NoBorder">
+                                <table width="90%" height="100px">
+                                    <tr>
+                                        <td >RECEIPT <br /> STAMP</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="NoBorder">.........................................AND DATE</td>
+                            <td class="NoBorder">
+                                <table align="right" style="text-align:right">
+                                    <tr>
+                                        <td  height="30px">....................................SIGNATURE</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td> {TITLE} TITLE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{DATE} DATE</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </div>
+<!--</body>
+</html>-->

@@ -1,0 +1,131 @@
+﻿.switch {
+    margin: 0 10px;
+    display: inline-block;
+    background: #222;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 4px 5px rgba(0,0,0,0.9), inset 0 -1px 2px rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.4), 0 -3px 8px rgba(255,255,255,0.2), 0 3px 8px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0 4px 5px rgba(0,0,0,0.9), inset 0 -1px 2px rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.4), 0 -3px 8px rgba(255,255,255,0.2), 0 3px 8px rgba(0,0,0,0.4);
+    -o-box-shadow: inset 0 4px 5px rgba(0,0,0,0.9), inset 0 -1px 2px rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.4), 0 -3px 8px rgba(255,255,255,0.2), 0 3px 8px rgba(0,0,0,0.4);
+    -ms-box-shadow: inset 0 4px 5px rgba(0,0,0,0.9), inset 0 -1px 2px rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.4), 0 -3px 8px rgba(255,255,255,0.2), 0 3px 8px rgba(0,0,0,0.4);
+    box-shadow: inset 0 4px 5px rgba(0,0,0,0.9), inset 0 -1px 2px rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.4), 0 -3px 8px rgba(255,255,255,0.2), 0 3px 8px rgba(0,0,0,0.4);
+}
+
+    .switch span {
+        font-size: 10px;
+        font-weight: bold;
+        font-family: Verdana;
+    }
+
+        .switch span.off {
+            float: left;
+            color: #f66;
+            text-shadow: 0 0 8px rgba(255,100,100,0.7);
+            padding: 8px 15px 8px 15px;
+        }
+
+        .switch span.on {
+            float: right;
+            color: #6f6;
+            text-shadow: 0 0 8px rgba(100,255,100,0.7);
+            padding: 8px 15px 8px 15px;
+        }
+
+            .switch span.on.dark, .switch span.off.dark {
+                color: #000;
+                text-shadow: 1px 1px 0 rgba(255,255,255,0.2);
+            }
+
+    .switch .switcher {
+        cursor: pointer;
+        position: absolute;
+        background: #666;
+        height: 24px;
+        width: 40px;
+        margin: 2px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -o-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset -1px 0 1px rgba(100,200,100,0.7);
+        -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset -1px 0 1px rgba(100,200,100,0.7);
+        -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset -1px 0 1px rgba(100,200,100,0.7);
+        -ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset -1px 0 1px rgba(100,200,100,0.7);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset -1px 0 1px rgba(100,200,100,0.7);
+        background-image: linear-gradient(top, rgb(119,119,119) 50%, rgb(68,68,68) 50%);
+        background-image: -o-linear-gradient(top, rgb(119,119,119) 50%, rgb(68,68,68) 50%);
+        background-image: -moz-linear-gradient(top, rgb(119,119,119) 50%, rgb(68,68,68) 50%);
+        background-image: -webkit-linear-gradient(top, rgb(119,119,119) 50%, rgb(68,68,68) 50%);
+        background-image: -ms-linear-gradient(top, rgb(119,119,119) 50%, rgb(68,68,68) 50%);
+        background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.5, rgb(119,119,119)), color-stop(0.5, rgb(68,68,68)) );
+    }
+
+        .switch .switcher.right {
+            -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset 1px 0 1px rgba(200,100,100,0.7);
+            -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset 1px 0 1px rgba(200,100,100,0.7);
+            -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset 1px 0 1px rgba(200,100,100,0.7);
+            -ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset 1px 0 1px rgba(200,100,100,0.7);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 3px 3px rgba(255,255,255,0.1), inset 0 -4px 4px rgba(120,120,120,0.2), inset 0 3px 5px rgba(255,255,255,0.2), 0 0 3px rgba(0,0,0,0.8), inset 1px 0 1px rgba(200,100,100,0.7);
+        }
+
+        .switch .switcher:hover {
+            background-image: linear-gradient(top, rgb(125,125,125) 50%, rgb(75,75,75) 50%);
+            background-image: -o-linear-gradient(top, rgb(125,125,125) 50%, rgb(75,75,75) 50%);
+            background-image: -moz-linear-gradient(top, rgb(125,125,125) 50%, rgb(75,75,75) 50%);
+            background-image: -webkit-linear-gradient(top, rgb(125,125,125) 50%, rgb(75,75,75) 50%);
+            background-image: -ms-linear-gradient(top, rgb(125,125,125) 50%, rgb(75,75,75) 50%);
+            background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.5, rgb(125,125,125)), color-stop(0.5, rgb(75,75,75)) );
+        }
+
+.dark_bg {
+    border: 1px solid #000;
+    background: #222 url('http://www.mypoo.de/coding/examples/dark_leather.png') no-repeat;
+    width: 300px;
+    padding: 0 30px;
+}
+
+    .dark_bg p {
+        display: block;
+        padding: 10px 50px 10px 50px;
+    }
+
+/*body {
+    background: #666;
+    color: #ccc;
+    font-family: arial;
+    margin: 0;
+    font-size: 12px;
+}
+
+img {
+    border: 0;
+}
+
+
+#main {
+    margin: 30px 100px 100px 100px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Helvetica','MS Sans serif';
+    color: #333;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+    margin: 20px 0 20px -20px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #999;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Helvetica','MS Sans serif';
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+    margin: 20px 0 20px -10px;
+}*/

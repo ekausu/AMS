@@ -1,0 +1,43 @@
+
+INSERT INTO [dbo].[AdvanceRequest]
+           ([Reqid]
+           ,[Current Salary]
+           ,[Advance Amount]
+           ,[Recovery Duration]
+           ,[Days]
+           ,[Reason]
+           ,[Entered by]
+           ,[Advance State]
+           ,[Start Date]
+           ,[EndDate]
+           ,[Entered Date]
+           ,[AssignedTo]
+           ,[Below 40%]
+           ,[Details]
+           ,[Paid Amount]
+           ,[Balance]
+           ,[cid]
+           ,[LastSystemUpdate]
+           ,[level]
+           ,[DueDate])
+
+     select [EmployeeDetails].reqid
+           ,0
+           ,cast((cast(Amount as int)*cast([installment Period] as int)) as varchar) 
+           ,[Installment Period]
+           ,NULL
+           ,NULL
+           ,'System entry'
+           ,'Running Recovery'
+           ,case when [Payroll Period]='2018-04' then '2018-04-01' else '2018-04-01'
+           ,dateadd(day,cast([Installment Period] as int),cast('2018-04-01' as date))
+           ,getdate()
+           ,'Cashier'
+           ,'No'
+           ,NULL
+           ,0
+           ,(CAST([Amount] AS INT)*cast([Installment Period] as int))
+           ,0
+           ,getdate()
+           ,case when (CAST([Amount] AS INT)*cast([Installment Period] as DATE))>0 then '3' else '5' END
+           ,getdate() from [Sheet2$],[EmployeeDetails] where [Sheet2$].[Employee No]=[Employee Number]
